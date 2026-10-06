@@ -72,6 +72,31 @@ npm run lint
 
 Future development will expand the application with additional pages, pet management functionality, health-related information, improved navigation, responsive design, accessibility improvements, testing, and additional user interactions.
 
-## Development Progress
+## Development Week 2 Progress
 
-The project currently has a functioning React/Vite environment with routing, a shared layout, and the initial application pages. Development will continue by expanding the application's functionality and refining the user experience.
+**Total Hours**
+
+* **Total Hours Contributed:** 3 hours 20 minutes
+
+**Task Breakdown & Proof of Work**
+
+**Task 1**
+
+* **Task/Activity:** Project setup and development environment configuration
+* **Time:** 1 hour
+* **Proof of Work:** Initialized the Vite React project, configured the project with ESLint, installed the required React Router and Supabase dependencies, removed the default Vite template assets, and verified that the production build completed successfully.
+* **Link (if applicable):** N/A
+
+**Task 2**
+
+* **Task/Activity:** Application structure and routing
+* **Time:** 1 hour 15 minutes
+* **Proof of Work:** Established the React application entry point, configured React Router, created the shared `Layout` component, created the `pages` directory, and established routes for the login, dashboard, and pets sections of the application.
+* **Link (if applicable):** N/A
+
+**Task 3**
+
+* **Task/Activity:** Initial pages and project documentation
+* **Time:** 1 hour 5 minutes
+* **Proof of Work:** Created the Login, Dashboard, and Pets pages, connected the pages to the application routing structure, verified the application through the development server and production build, and created the initial project README documenting the application's purpose, technologies, current features, structure, development commands, and goals.
+* **Link (if applicable):** N/A
