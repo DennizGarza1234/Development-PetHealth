@@ -182,3 +182,196 @@
     border-right-color: var(--border);
   }
 }
+
+
+/* Pet Management */
+
+.pets-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.pets-page h2 {
+  margin-bottom: 8px;
+}
+
+.pets-page > p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--text-h);
+}
+
+.pets-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pet-card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--social-bg);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pet-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.pet-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--text-h);
+}
+
+.pet-card p {
+  margin: 8px 0;
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .pets-page {
+    padding: 16px;
+  }
+
+  .pets-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Pet Search */
+
+.pets-page input[type="search"] {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--social-bg);
+  color: var(--text);
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.pets-page input[type="search"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.pets-page input[type="search"]::placeholder {
+  color: var(--text-h);
+  opacity: 0.75;
+}
+
+
+/* Pet Species Filter */
+
+.pets-page select {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--social-bg);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.pets-page select option {
+  background-color: white;
+  color: #222222;
+}
+
+.pets-page select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+
+/* Pet Management Header */
+
+.pets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.pets-header h2 {
+  margin-bottom: 8px;
+}
+
+.pets-header p {
+  margin-bottom: 0;
+}
+
+.pets-header button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.pets-header button:hover {
+  opacity: 0.85;
+}
+
+.pets-header button:focus-visible {
+  outline: 2px solid var(--text-h);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .pets-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.pets-page .pets-count {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: var(--text-h);
+  font-size: 0.9rem;
+}
+
+/* Respect Reduced Motion Preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .pet-card {
+    transition: none;
+  }
+
+  .pet-card:hover {
+    transform: none;
+  }
+}
+
+/* Empty Pet List Message */
+
+.pets-empty-state {
+  padding: 24px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  background: var(--social-bg);
+  color: var(--text);
+  text-align: center;
+}
