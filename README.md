@@ -100,3 +100,39 @@ Future development will expand the application with additional pages, pet manage
 * **Time:** 1 hour 5 minutes
 * **Proof of Work:** Created the Login, Dashboard, and Pets pages, connected the pages to the application routing structure, verified the application through the development server and production build, and created the initial project README documenting the application's purpose, technologies, current features, structure, development commands, and goals.
 * **Link (if applicable):** N/A
+
+## Development Week 3 Progress
+
+### Total Hours
+
+- **Total Hours Contributed:** 3 hours 19 minutes
+
+### Task Breakdown & Proof of Work
+
+#### Task 1
+
+- **Task/Activity:** Pet Management interface and styling
+- **Time:** 45 minutes
+- **Proof of Work:** Styled pet cards, improved the responsive card layout, added hover effects, improved dropdown readability, and supported reduced-motion preferences.
+- **Link (if applicable):** Pet Management pull request
+
+#### Task 2
+
+- **Task/Activity:** Pet search and species filtering
+- **Time:** 40 minutes
+- **Proof of Work:** Implemented search functionality for pet names, species, and breeds; added a species dropdown filter; created a dynamic count of matching pets; and added a no-results message.
+- **Link (if applicable):** Pet Management pull request
+
+#### Task 3
+
+- **Task/Activity:** Add Pet navigation and empty-state handling
+- **Time:** 1 hour 19 minutes
+- **Proof of Work:** Added an Add Pet button using React Router navigation, created an empty-state message for when no pets are registered, and styled the message to match the application's design.
+- **Link (if applicable):** Pet Management pull request
+
+#### Task 4
+
+- **Task/Activity:** Testing, Git workflow, and pull request
+- **Time:** 35 minutes
+- **Proof of Work:** Tested pet search, species filtering, dynamic result counts, and navigation. Committed the changes to the `feature/pet-management` branch and created a pull request to merge the work into `main`.
+- **Link (if applicable):** Pet Management pull request
