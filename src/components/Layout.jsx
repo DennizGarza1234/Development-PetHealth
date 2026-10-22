@@ -2,12 +2,12 @@ import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <div>
-      <header>
+    <div className="app-layout">
+      <header className="app-header">
         <h1>Pet Health</h1>
       </header>
 
-      <main>
+      <main className="app-main">
         <Outlet />
       </main>
     </div>
