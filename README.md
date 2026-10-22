@@ -1,138 +1,177 @@
 # Pet Health App
 
-A web application designed to help pet owners organize and manage information about their pets and their health.
-
 ## Project Overview
 
-The Pet Health App provides a central location for users to manage their pets and access health-related information. The application is being developed with a focus on a clear structure, simple navigation, and an organized user experience.
+The Pet Health App is a web application designed to help users manage their pets' information in one place. This project is being developed as part of my Application Development coursework, with a focus on responsive design, reusable components, navigation, and database integration.
 
-## Technologies
+## Technologies Used
 
-* React
-* Vite
-* JavaScript
-* React Router
-* Supabase
-* ESLint
+- React
+- Vite
+- JavaScript
+- React Router
+- Supabase
+- CSS
+- ESLint
+- Git and GitHub
 
 ## Current Features
 
-* React/Vite application setup
-* Application routing with React Router
-* Shared application layout
-* Login page
-* Dashboard page
-* Pets page
-* Organized page and component structure
-* Production build configuration
+- React and Vite project setup
+- Application routing with React Router
+- Shared application layout and header
+- Login page
+- Dashboard with navigation cards
+- My Pets page with pet cards
+- Pet search by name, species, or breed
+- Species filtering
+- Add Pet page with a structured form interface
+- Responsive layout and styling
+- Supabase client configuration
+- Organized project structure
 
-## Application Structure
+**Note:** The Add Pet form is currently a user interface. Saving new pet records to Supabase is planned for a future development stage.
+
+## Project Structure
 
 ```text
-src/
-├── App.jsx
-├── main.jsx
-├── index.css
-├── App.css
-├── components/
-│   └── Layout.jsx
-└── pages/
-    ├── Login.jsx
-    ├── Dashboard.jsx
-    └── Pets.jsx
+development pethealth/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Layout.jsx
+│   │   └── BackButton.jsx
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Pets.jsx
+│   │   ├── AddPet.jsx
+│   │   └── Profile.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── main.jsx
+│   └── supabaseClient.js
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
 ```
 
-## Development
+## Running the Project Locally
 
-Install project dependencies:
+1. Clone the repository.
+2. Install dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-Start the development server:
+3. Create a local `.env` file and configure the required Supabase environment variables.
+4. Start the development server:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-Build the application:
+5. Open the local URL provided by Vite.
+
+To create a production build:
 
 ```bash
 npm run build
 ```
 
-Run ESLint:
+## Development Progress
 
-```bash
-npm run lint
-```
+### Week 1: Supabase Client Setup
 
-## Development Goals
+**Task: Configure Supabase Client**
 
-Future development will expand the application with additional pages, pet management functionality, health-related information, improved navigation, responsive design, accessibility improvements, testing, and additional user interactions.
+- Created the Supabase client configuration.
+- Connected the application using environment variables.
+- Updated `.gitignore` to prevent environment files and secrets from being committed.
+- Verified that the application loaded without errors.
 
-## Development Week 2 Progress
+**Pull request:** [Configure Supabase client — PR #1](https://github.com/DennizGarza1234/Development-PetHealth/pull/1)
 
-**Total Hours**
+### Week 2: Project Setup and Application Structure
 
-* **Total Hours Contributed:** 3 hours 20 minutes
+**Total time: 3 hours 20 minutes**
 
-**Task Breakdown & Proof of Work**
+**Task 1: Project Setup and Environment — 1 hour**
+- Set up the React and Vite development environment.
+- Installed and configured project dependencies.
 
-**Task 1**
+**Task 2: Application Structure and Routing — 1 hour 15 minutes**
+- Organized the application into reusable components and page files.
+- Set up application routing and the shared layout.
 
-* **Task/Activity:** Project setup and development environment configuration
-* **Time:** 1 hour
-* **Proof of Work:** Initialized the Vite React project, configured the project with ESLint, installed the required React Router and Supabase dependencies, removed the default Vite template assets, and verified that the production build completed successfully.
-* **Link (if applicable):** N/A
+**Task 3: Initial Pages and Documentation — 1 hour 5 minutes**
+- Developed the initial application pages.
+- Documented the project structure and setup instructions.
 
-**Task 2**
+### Week 3: Pet Management Features
 
-* **Task/Activity:** Application structure and routing
-* **Time:** 1 hour 15 minutes
-* **Proof of Work:** Established the React application entry point, configured React Router, created the shared `Layout` component, created the `pages` directory, and established routes for the login, dashboard, and pets sections of the application.
-* **Link (if applicable):** N/A
+**Total time: 3 hours 19 minutes**
 
-**Task 3**
+**Task 1: Pet Management Interface and Styling — 45 minutes**
+- Created pet cards with sample pet information.
+- Improved the layout and styling of the My Pets page.
 
-* **Task/Activity:** Initial pages and project documentation
-* **Time:** 1 hour 5 minutes
-* **Proof of Work:** Created the Login, Dashboard, and Pets pages, connected the pages to the application routing structure, verified the application through the development server and production build, and created the initial project README documenting the application's purpose, technologies, current features, structure, development commands, and goals.
-* **Link (if applicable):** N/A
+**Task 2: Pet Search and Species Filtering — 40 minutes**
+- Added search functionality for pet names, species, and breeds.
+- Added a species filter and dynamic pet count.
 
-## Development Week 3 Progress
+**Task 3: Add Pet Navigation and Empty State — 1 hour 19 minutes**
+- Added navigation to the Add Pet page.
+- Improved the page's empty-state behavior.
 
-### Total Hours
+**Task 4: Testing and Git Workflow — 35 minutes**
+- Tested the pet management interface.
+- Committed the changes and merged the feature pull request.
 
-- **Total Hours Contributed:** 3 hours 19 minutes
+**Pull request:** [Add pet management features — PR #2](https://github.com/DennizGarza1234/Development-PetHealth/pull/2)
 
-### Task Breakdown & Proof of Work
+### Week 4: Responsive Layout and Dashboard Improvements
 
-#### Task 1
+**Estimated total time: 3 hours 30 minutes**
 
-- **Task/Activity:** Pet Management interface and styling
-- **Time:** 45 minutes
-- **Proof of Work:** Styled pet cards, improved the responsive card layout, added hover effects, improved dropdown readability, and supported reduced-motion preferences.
-- **Link (if applicable):** Pet Management pull request
+**Task 1: Responsive App Layout — 35 minutes**
+- Updated the root layout to use the available viewport width.
+- Added a maximum content width and minimum viewport height.
+- Tested existing pages to confirm they continued to display correctly.
 
-#### Task 2
+**Pull request:** [Improve responsive app layout — PR #3](https://github.com/DennizGarza1234/Development-PetHealth/pull/3)
 
-- **Task/Activity:** Pet search and species filtering
-- **Time:** 40 minutes
-- **Proof of Work:** Implemented search functionality for pet names, species, and breeds; added a species dropdown filter; created a dynamic count of matching pets; and added a no-results message.
-- **Link (if applicable):** Pet Management pull request
+**Task 2: Shared Layout and Header — 35 minutes**
+- Added a consistent shared header and main content area.
+- Improved layout consistency across the application.
 
-#### Task 3
+**Task 3: Add Pet Form Interface — 55 minutes**
+- Added fields for pet name, species, breed, and age.
+- Added labels, placeholders, input focus styling, and responsive spacing.
+- Prepared the interface for future form functionality.
 
-- **Task/Activity:** Add Pet navigation and empty-state handling
-- **Time:** 1 hour 19 minutes
-- **Proof of Work:** Added an Add Pet button using React Router navigation, created an empty-state message for when no pets are registered, and styled the message to match the application's design.
-- **Link (if applicable):** Pet Management pull request
+**Task 4: Dashboard Navigation — 45 minutes**
+- Added dashboard cards linking to My Pets and Add a Pet.
+- Added responsive card styling, hover states, and keyboard focus styling.
 
-#### Task 4
+**Task 5: Testing and Git Workflow — 40 minutes**
+- Tested the shared header, Add Pet page, and dashboard navigation.
+- Committed the changes and merged the feature pull request.
 
-- **Task/Activity:** Testing, Git workflow, and pull request
-- **Time:** 35 minutes
-- **Proof of Work:** Tested pet search, species filtering, dynamic result counts, and navigation. Committed the changes to the `feature/pet-management` branch and created a pull request to merge the work into `main`.
-- **Link (if applicable):** Pet Management pull request
+**Pull request:** [Improve shared layout and dashboard navigation — PR #4](https://github.com/DennizGarza1234/Development-PetHealth/pull/4)
+
+## Future Development Goals
+
+- Connect pet management forms to Supabase.
+- Save, retrieve, edit, and delete pet records.
+- Add pet health records, vaccinations, and appointment tracking.
+- Improve form validation and error handling.
+- Continue improving accessibility and responsive design.
+- Add automated tests for key application features.
+
+## Repository
+
+[Development-PetHealth on GitHub](https://github.com/DennizGarza1234/Development-PetHealth)
